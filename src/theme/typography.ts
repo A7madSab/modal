@@ -97,6 +97,7 @@ export const createtypography = ({ theme }: { theme: Theme }): Typography => {
         subtitle2: {
             fontFamily: "IBM Plex Sans",
             lineHeight: 1.4,
+            fontWeight: "400",
             [theme.breakpoints.down("sm")]: {
                 fontSize: "13px",
             },

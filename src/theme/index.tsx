@@ -23,16 +23,36 @@ export const createMUITheme = () => {
     theme.components = {
         MuiButton: {
             styleOverrides: {
+                root: {
+                    borderRadius: "10px",
+                    height: "45px",
+                    textTransform: "none",
+                    minWidth: "100px",
+                },
                 outlinedPrimary: {
                     color: "#000000",
-                    borderRadius: "50px",
-                    textTransform: "none",
                     border: "1px solid #000000",
                     backgroundColor: "#FFFFFF",
                     "&:hover": {
                         border: "1px solid #FFFFFF",
+                        color: "#FFFFFF",
                         backgroundColor: theme.palette.primary.main,
                     },
+                },
+                containedPrimary: {
+                    backgroundColor: "#1d1b28",
+                    color: "#FFFFFF",
+                },
+                containedSecondary: {
+                    backgroundColor: "#dfdedf",
+                    color: "#7c7a7c",
+                },
+            },
+        },
+        MuiOutlinedInput: {
+            styleOverrides: {
+                input: {
+                    padding: "4px",
                 },
             },
         },
